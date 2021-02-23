@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Country from './components/Country'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Country 
+        flag='https://image.shutterstock.com/image-illustration/illustration-flag-colombia-260nw-124331698.jpg'
+        name='Colombia'
+        population={1545468}
+        region='America'
+        capital='Bogota'
+      />
     </div>
   );
 }
